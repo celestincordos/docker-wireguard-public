@@ -15,9 +15,4 @@ services:
       - /lib/modules:/lib/modules:ro
     ports:
       - 51820:51820/udp
-    entrypoint: /bin/bash
-    command: >
-      -c "envsubst < /config/wg0.conf.template > /config/wg0.conf && exec /init"
-    env_file:
-      - .env
     restart: unless-stopped
