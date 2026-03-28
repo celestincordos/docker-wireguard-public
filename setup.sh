@@ -8,5 +8,6 @@ fi
 
 source .env
 
-envsubst < config/wg0.conf.template > config/wg0.conf
-echo "Generated config/wg0.conf"
+mkdir -p config/wg_confs
+envsubst < config/wg0.conf.template > config/wg_confs/wg0.conf
+echo "Generated config/wg_confs/wg0.conf"
