@@ -1,9 +1,9 @@
 [Interface]
-Address = 10.0.0.1/32
+Address = 10.8.0.1/32
 ListenPort = 51820
 PrivateKey = ${VPS_PRIVATE_KEY}
 
 [Peer]
 # Home server
 PublicKey = ${HOME_SERVER_PUBLIC_KEY}
-AllowedIPs = 10.0.0.2/32
+AllowedIPs = 10.8.0.2/32
